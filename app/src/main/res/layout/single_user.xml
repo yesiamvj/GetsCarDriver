@@ -1,0 +1,26 @@
+<LinearLayout android:orientation="vertical"
+    android:onClick="goToBookingDetails"
+    style="@style/mpwc"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/single_user_hold"
+        style="@style/mpwcvw">
+        <TextView
+            android:id="@+id/bk_customer_name"
+            style="@style/bookingHistory_carDate"
+            android:text="RaviKumar"
+            android:paddingBottom="0dp"
+            android:textColor="#ffa000"
+            android:paddingTop="10dp"
+            />
+        <TextView
+            android:id="@+id/bk_customer_mob"
+            style="@style/bookingHistory_carDate"
+            android:paddingLeft="20dp"
+            android:text="xxx"
+            android:textColor="#1565c0"
+            />
+
+    </LinearLayout>
+    <Button style="@style/topTitleShadow" />
+</LinearLayout>

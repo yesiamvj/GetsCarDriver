@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/activity_booking_history" android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+    <ScrollView style="@style/mama">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_marginTop="0.0dip" style="@style/topTitleBar">
+                <TextView
+                    android:id="@+id/bookHisTtl"
+                    android:textSize="20.0dip" android:textColor="@color/colorPrimary" android:text="Booking Timeline" style="@style/topTitleText" />
+                <Button style="@style/topTitleShadow" android:layout_marginBottom="2dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/my_list_hold"
+                android:orientation="vertical"
+                android:padding="7.0dip" style="@style/mpwc"
+                android:layout_marginBottom="100dp">
+
+
+                <TextView android:id="@+id/bk_editd"
+                    android:text="Click to View or Edit a Booking "
+                    style="@style/bookingHistory_edit"
+                    android:layout_marginBottom="5dp"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

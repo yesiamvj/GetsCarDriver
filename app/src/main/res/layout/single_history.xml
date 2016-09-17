@@ -1,0 +1,31 @@
+<LinearLayout android:orientation="vertical"
+    android:onClick="goToBookingDetails"
+    style="@style/mpwc"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/single_hstry_hold"
+        style="@style/mpwcvw">
+        <TextView android:id="@+id/booking_no"
+            android:textColor="#ffffff"
+            android:text="Booking No : #2789" style="@style/bookingHistory_ID" />
+        <Button android:id="@+id/supSHa" style="@style/topTitleShadow" />
+        <TextView
+
+            android:id="@+id/bk_customer_name"
+            style="@style/bookingHistory_carDate"
+            android:text="RaviKumar"
+            android:textColor="#ffa000"
+            />
+        <TextView
+            android:id="@+id/bk_customer_mob"
+            style="@style/bookingHistory_carDate"
+            android:text="9994453787"
+            android:textColor="#1565c0"
+            />
+        <TextView android:id="@+id/bk_duration" android:text="10.6.17 to 12.6.17" style="@style/bookingHistory_carDate" />
+        <TextView android:id="@+id/bk_car_name" android:text="Toyoto Innova" style="@style/bookingHistory_carName" />
+        <TextView android:id="@+id/bk_car_bookDate" android:textColor="@android:color/darker_gray" android:textSize="16dp" android:paddingRight="25dp" android:gravity="end" android:text="On 10.7.15" android:paddingBottom="12dp" style="@style/bookingHistory_carName" />
+
+    </LinearLayout>
+    <Button style="@style/topTitleShadow" />
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/activity_booking_history" android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+    <ScrollView style="@style/mama">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="10.0dip" style="@style/mpwc">
+            <LinearLayout android:orientation="vertical" android:layout_marginTop="0.0dip" style="@style/topTitleBar">
+                <TextView android:id="@+id/bookHisTtl" android:textSize="20.0dip" android:textColor="#04b90d" android:text="Settlement"  style="@style/topTitleText" />
+                <Button style="@style/topTitleShadow" android:background="#04b90d"/>
+            </LinearLayout>
+            <LinearLayout style="@style/mpwc">
+                <TextView android:id="@+id/bookingHeaderDets" android:paddingLeft="18.0dip" android:paddingTop="5.0dip" android:paddingBottom="10.0dip" android:text="Booking ID : #XXX On xxx" style="@style/mpwc" />
+            </LinearLayout>
+            <LinearLayout style="@style/mpwcvw" android:paddingBottom="30dp">
+                <LinearLayout style="@style/mpwcvw">
+                    <TextView android:text="@string/rideDate" style="@style/confirmBooking_QueText" />
+                    <TextView
+                        android:id="@+id/rideDate"
+                        android:text="@string/lo" style="@style/confirmBooking_AnsText" />
+                    <TextView android:text="Total Distance" style="@style/confirmBooking_QueText" />
+                    <TextView
+                        android:id="@+id/ride_dist"
+
+                        android:text="Loading.."
+                        style="@style/confirmBooking_AnsText"
+                        android:lineSpacingExtra="5dp"
+                        android:textSize="16dp"
+                       />
+
+                    <TextView android:text="Fuel level" style="@style/confirmBooking_QueText" />
+                    <TextView
+                        android:id="@+id/ride_fuel"
+                        android:text="@string/lo" style="@style/confirmBooking_AnsText" />
+                    <TextView android:text="Advance Paid" style="@style/confirmBooking_QueText" />
+                    <TextView
+                        android:id="@+id/ride_paidamt"
+                        android:text="@string/lo" style="@style/confirmBooking_AnsText" />
+                    <TextView style="@style/mpwc"
+                        android:text="Balance To Pay"
+                        android:textColor="#00d54b"
+                        android:layout_margin="25dp"
+                        android:textSize="25dp"/>
+                    <TextView style="@style/mpwc"
+                        android:id="@+id/balToPayTxt"
+                        android:text="@string/lo"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/settlement_ok"
+                    style="@style/mpwc"
+                    android:background="#039be5"
+                    android:textAllCaps="false"
+                    android:text="Complete Ride"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="30dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ulgebra.getscardriver.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <ScrollView style="@style/mama">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="10.0dip" style="@style/mpwc">
+            <LinearLayout android:orientation="vertical" android:layout_marginTop="0.0dip" style="@style/topTitleBar">
+                <TextView android:textSize="20.0dip" android:textColor="@color/colorPrimary" android:text="Search Booking" style="@style/topTitleText" />
+                <Button style="@style/topTitleShadow" />
+            </LinearLayout>
+            <LinearLayout style="@style/mpwc">
+                <TextView android:paddingLeft="18.0dip" android:paddingTop="5.0dip" android:paddingBottom="0dip" android:text="Welcome to Getscar" style="@style/mpwc" />
+            </LinearLayout>
+            <LinearLayout style="@style/mpwcvw" android:padding="10dp" android:layout_margin="10dp">
+                <LinearLayout style="@style/mpwc" android:orientation="vertical">
+                    <TextView style="@style/mpwcvw"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="5dp"
+                        android:text="@string/search_by_booking_id"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18dp"/>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        >
+
+                        <AutoCompleteTextView
+                            android:id="@+id/search_bookingNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Booking id"
+                            android:paddingLeft="10dp"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:singleLine="true" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <Button style="@style/mpwc"
+                        android:id="@+id/searchBookingBtn"
+                        android:text="VIEW DETAILS"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#ffb300"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout style="@style/mpwcvw" android:padding="10dp" android:layout_margin="10dp">
+                <LinearLayout style="@style/mpwc" android:orientation="vertical">
+                    <TextView style="@style/mpwcvw"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="5dp"
+                        android:text="Search by Customer"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18dp"/>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        >
+
+                        <AutoCompleteTextView
+                            android:id="@+id/search_user_filtr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Username / Mobile / Email "
+                            android:paddingLeft="10dp"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:singleLine="true" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <Button style="@style/mpwc"
+                        android:id="@+id/searchUserBtn"
+                        android:text="VIEW DETAILS"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="#558108"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

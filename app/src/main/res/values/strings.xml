@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">GetsCar Driver</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Log Out</string>
+
+    <string name="title_activity_single_car_detail">Single Car Detail</string>
+    <string-array name="cancel_reasons">
+        <item>Cancelled By Admin</item>
+        <item>Have another Car</item>
+        <item>Cancelled Trip</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="fuel_type">
+        <item>Petrol</item>
+        <item>Diesel</item>
+    </string-array>
+    <string-array name="fuel_level">
+        <item>1/4</item>
+        <item>1/2</item>
+        <item>3/4</item>
+        <item>Full</item>
+    </string-array>
+    <string-array name="trans_type">
+        <item>Manual</item>
+        <item>Auto</item>
+    </string-array>
+    <string-array name="car_type">
+        <item>Seden</item>
+        <item>Hatchpack</item>
+        <item>SUV</item>
+    </string-array>
+
+    <string name="title_activity_cars">Cars</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="lo">Loading...</string>
+    <string name="rideDate">Ride Date</string>
+    <string name="bookSts">Booking Status</string>
+    <string name="usrNme">Username</string>
+    <string name="usrMo">Mobile No</string>
+    <string name="carDesc">Car Description</string>
+    <string name="veh">Vehicle</string>
+    <string name="totCost">Total Cost</string>
+    <string name="advAmt">Advance Amount Paid</string>
+    <string name="discAmt">Discount Amount</string>
+    <string name="balPa">Balance Unpaid</string>
+    <string name="pickAt">Pick Up Location</string>
+    <string name="pickT">Pick Up Time</string>
+    <string name="costper">Cost per Day / 24 Hours</string>
+    <string name="carPho">Car Photos</string>
+    <string name="delcr">Delete Car</string>
+    <string name="search_by_booking_id">Search by Booking ID</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="show_bookings">Show Bookings</string>
+    <string name="edit_car_details">Edit Car Details</string>
+</resources>

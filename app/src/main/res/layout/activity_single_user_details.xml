@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<android.support.constraint.ConstraintLayout tools:context=".SingleBookingDetails"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_booking_details"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ScrollView style="@style/mama">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="10.0dip" style="@style/mpwc">
+            <LinearLayout android:orientation="vertical" android:layout_marginTop="0.0dip" style="@style/topTitleBar">
+                <TextView android:textSize="20.0dip" android:textColor="@color/colorPrimary" android:text="User Details" style="@style/topTitleText" />
+                <Button style="@style/topTitleShadow" />
+            </LinearLayout>
+            <LinearLayout style="@style/mpwc">
+                <TextView android:id="@+id/bookingHeaderDets" android:paddingLeft="18.0dip" android:paddingTop="5.0dip" android:paddingBottom="10.0dip" android:text="Booking ID : #XXX On xxx" style="@style/mpwc" />
+            </LinearLayout>
+            <LinearLayout style="@style/mpwcvw">
+                <LinearLayout style="@style/mpwcvw">
+                    <Button
+                        style="@style/carDetilEndBtn"
+                        android:id="@+id/viewBooksBtn"
+                        android:background="#fafafa"
+                        android:textColor="#000000"
+                        android:textAllCaps="false"
+                        android:text="View Bookings" />
+
+                    <TextView android:text="User name" style="@style/confirmBooking_QueText" />
+                    <TextView
+                        android:id="@+id/ride_username"
+                        android:text="6.7.16 to 30.7.16" style="@style/confirmBooking_AnsText" />
+                    <TextView android:text="Mobile" style="@style/confirmBooking_QueText" />
+                    <TextView
+                        android:id="@+id/usermob"
+                        android:text="Normal"
+                        style="@style/confirmBooking_AnsText"
+                        />
+
+                    <TextView android:text="Email" style="@style/confirmBooking_QueText" />
+                    <TextView
+                        android:id="@+id/usermail"
+                        android:text="Name" style="@style/confirmBooking_AnsText" />
+                    <TextView android:text="Password" style="@style/confirmBooking_QueText" />
+                    <TextView
+                        android:id="@+id/userpass"
+                        android:text="xxxx" style="@style/confirmBooking_AnsText" />
+
+
+                    <TextView android:text="Licence No" style="@style/confirmBooking_QueText" />
+                    <TextView
+                        android:id="@+id/userlic"
+                        android:text="mobile number" style="@style/confirmBooking_AnsText" />
+
+                    <TextView android:text="Total Bookings" style="@style/confirmBooking_QueText" />
+                    <TextView
+                        android:id="@+id/ride_totBook"
+                        android:text="0" style="@style/confirmBooking_AnsText" />
+                    <TextView android:text="Registered On" style="@style/confirmBooking_QueText" />
+                    <TextView
+                        android:id="@+id/ride_regDate"
+                        android:layout_marginBottom="30dp"
+                        android:text="0" style="@style/confirmBooking_AnsText" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

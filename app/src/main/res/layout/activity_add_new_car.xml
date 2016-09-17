@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_new_car"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ulgebra.getscardriver.StartRideEntry">
+    <ScrollView style="@style/mama">
+        <LinearLayout style="@style/mpwc"
+            android:orientation="vertical">
+            <LinearLayout style="@style/topTitleBar"
+                android:layout_marginTop="0dp">
+
+                <TextView
+                    style="@style/topTitleText"
+                    android:text="Start Ride Details"
+                    />
+
+                <Button style="@style/topTitleShadow" />
+
+            </LinearLayout>
+            <LinearLayout style="@style/mpwc"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                >
+
+                <!--<TextView-->
+                    <!--style="@style/mpwc"-->
+                    <!--android:text="Ride Details"-->
+                    <!--android:paddingTop="16dp"-->
+                    <!--android:paddingLeft="18dp"-->
+                    <!--android:layout_marginLeft="2dp"-->
+                    <!--android:layout_marginRight="2dp"-->
+                    <!--android:textSize="18dp"-->
+                    <!--android:textColor="@android:color/darker_gray"-->
+                    <!--android:background="#ffffff"/>-->
+            </LinearLayout>
+            <LinearLayout
+                style="@style/mpwc"
+                android:orientation="vertical"
+                android:paddingTop="15dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:background="#ffffff"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:paddingBottom="15dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Car Taken On"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/colorAccent"/>
+
+
+
+                <DatePicker
+                    android:id="@+id/from_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:calendarViewShown="false"
+                    android:calendarTextColor="@color/colorPrimaryDark"
+                    android:clipToPadding="true"
+
+                    android:datePickerMode="spinner"></DatePicker>
+                <LinearLayout style="@style/mpwcvw"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="45dp"
+                    >
+                    <Button style="@style/mpwc"
+                        android:id="@+id/BtnSelctFromTime"
+                        android:background="#f5f5f5"
+                        android:layout_marginBottom="10dp"
+                        android:text="Select PickUp Time"
+                        />
+                </LinearLayout>
+                <!--<android.support.design.widget.TextInputLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<AutoCompleteTextView-->
+                        <!--style="@style/mpwc"-->
+                        <!--android:id="@+id/extra_hour_charge"-->
+                        <!--android:hint="Extra per hour Charge"-->
+                        <!--android:paddingLeft="10dp"-->
+                        <!--android:inputType="number"-->
+                        <!--android:maxLines="1"-->
+                        <!--android:singleLine="true" />-->
+
+                <!--</android.support.design.widget.TextInputLayout>-->
+                <!--<android.support.design.widget.TextInputLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<AutoCompleteTextView-->
+                        <!--style="@style/mpwc"-->
+                        <!--android:id="@+id/seater_inp"-->
+                        <!--android:hint="Seater"-->
+                        <!--android:paddingLeft="10dp"-->
+                        <!--android:inputType="numberDecimal"-->
+                        <!--android:maxLines="1"-->
+                        <!--android:singleLine="true" />-->
+
+                <!--</android.support.design.widget.TextInputLayout>-->
+                <!--<android.support.design.widget.TextInputLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<AutoCompleteTextView-->
+                        <!--style="@style/mpwc"-->
+                        <!--android:id="@+id/airbag_inp"-->
+                        <!--android:hint="Airbag"-->
+                        <!--android:paddingLeft="10dp"-->
+                        <!--android:inputType="numberDecimal"-->
+                        <!--android:maxLines="1"-->
+                        <!--android:singleLine="true" />-->
+
+                <!--</android.support.design.widget.TextInputLayout>-->
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Documents Collected"
+                    android:textSize="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/colorAccent"/>
+                <LinearLayout style="@style/mpwc"
+                    android:orientation="vertical"
+                    android:background="#f5f5f5"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingBottom="10dp"
+                    >
+                <LinearLayout style="@style/mpwc"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="10dp">
+                    <CheckBox
+                        android:text="Passport"
+                        style="@style/chkbxs_addcar"
+                        android:id="@+id/passpo"
+                        />
+                    <CheckBox
+                        android:text="Ration Card"
+                        style="@style/chkbxs_addcar"
+                        android:id="@+id/rationc"
+                        />
+
+
+        </LinearLayout>
+
+                <LinearLayout style="@style/mpwc"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="10dp">
+                    <CheckBox
+                        android:text="Corporate"
+                        style="@style/chkbxs_addcar"
+                        android:id="@+id/corpor"
+                        />
+                    <CheckBox
+                        android:text="Drivin Licence"
+                        style="@style/chkbxs_addcar"
+                        android:id="@+id/drilic"
+                        />
+
+                </LinearLayout>
+                    <LinearLayout style="@style/mpwc"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_marginTop="10dp">
+                        <CheckBox
+                            android:text="Aadhaar"
+                            style="@style/chkbxs_addcar"
+                            android:id="@+id/aadahr"
+                            />
+                    <!--<CheckBox-->
+                        <!--android:text="Bluetooth"-->
+                        <!--style="@style/chkbxs_addcar"-->
+                        <!--android:id="@+id/bluto"-->
+                        <!--/>-->
+                </LinearLayout>
+
+
+
+                    <!--<LinearLayout style="@style/mpwc"-->
+                    <!---->
+                                <!--android:orientation="horizontal"-->
+                                <!--android:weightSum="2"-->
+                                <!--android:layout_marginTop="10dp">-->
+                    <!--<CheckBox-->
+                        <!--android:text="FWD"-->
+                        <!--style="@style/chkbxs_addcar"-->
+                        <!--android:id="@+id/fwdd"-->
+                         <!--/>-->
+                    <!--<CheckBox-->
+                        <!--android:text="RWD"-->
+                        <!--style="@style/chkbxs_addcar"-->
+                        <!--android:id="@+id/rwdd"-->
+                         <!--/>-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout style="@style/mpwc"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="2"-->
+                        <!--android:visibility="gone"-->
+                        <!--android:layout_marginTop="10dp">-->
+                        <!--<CheckBox-->
+                            <!--android:text="AUX"-->
+                            <!--style="@style/chkbxs_addcar"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:id="@+id/auxs"-->
+                            <!--/>-->
+                        <!--<CheckBox-->
+                            <!--android:text="Power Window"-->
+                            <!--android:layout_weight="1"-->
+                            <!--style="@style/chkbxs_addcar"-->
+                            <!--android:id="@+id/powerWindow"-->
+                            <!--/>-->
+
+                    <!--</LinearLayout>-->
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Car Condition"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/colorAccent"/>
+
+
+                <LinearLayout style="@style/mpwc"
+                    android:orientation="vertical"
+                    android:background="#f5f5f5"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+
+                    >
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <AutoCompleteTextView
+                            style="@style/mpwc"
+                            android:id="@+id/odomet_inp"
+                            android:hint="Odometer On start"
+                            android:paddingLeft="10dp"
+                            android:inputType="numberDecimal"
+                            android:maxLines="1"
+                            android:singleLine="true" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*Only numbers"
+                        android:gravity="end"
+                        android:textColor="#0000ff"/>
+                    <LinearLayout style="@style/mpwcvw"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_marginTop="10dp">
+                        <TextView style="@style/mpwc"
+                            android:text="Fuel Level"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"/>
+                        <Spinner android:id="@+id/fuel_type"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            style="@style/mpwc" />
+                    </LinearLayout>
+                    <LinearLayout style="@style/mpwc"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_marginTop="25dp">
+                        <CheckBox
+                            android:text="Tyre"
+                            style="@style/chkbxs_addcar"
+                            android:id="@+id/tyress"
+                            />
+                        <CheckBox
+                            android:text="Stepni"
+                            style="@style/chkbxs_addcar"
+                            android:id="@+id/stepni"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/mpwc"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_marginTop="10dp">
+                        <CheckBox
+                            android:text="Jacky"
+                            style="@style/chkbxs_addcar"
+                            android:id="@+id/jacky"
+                            />
+                        <CheckBox
+                            android:text="Tools"
+                            style="@style/chkbxs_addcar"
+                            android:id="@+id/toolss"
+                            />
+
+                    </LinearLayout>
+
+
+
+                    <!--<LinearLayout style="@style/mpwc"-->
+                        <!--android:visibility="gone"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="2"-->
+                        <!--android:layout_marginTop="10dp">-->
+                        <!--<CheckBox-->
+                            <!--android:text="FWD"-->
+                            <!--style="@style/chkbxs_addcar"-->
+                            <!--android:id="@+id/fwdd"-->
+                            <!--/>-->
+                        <!--<CheckBox-->
+                            <!--android:text="RWD"-->
+                            <!--style="@style/chkbxs_addcar"-->
+                            <!--android:id="@+id/rwdd"-->
+                            <!--/>-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout style="@style/mpwc"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="2"-->
+                        <!--android:visibility="gone"-->
+                        <!--android:layout_marginTop="10dp">-->
+                        <!--<CheckBox-->
+                            <!--android:text="AUX"-->
+                            <!--style="@style/chkbxs_addcar"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:id="@+id/auxs"-->
+                            <!--/>-->
+                        <!--<CheckBox-->
+                            <!--android:text="Power Window"-->
+                            <!--android:layout_weight="1"-->
+                            <!--style="@style/chkbxs_addcar"-->
+                            <!--android:id="@+id/powerWindow"-->
+                            <!--/>-->
+
+                    <!--</LinearLayout>-->
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Car Pictures"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/colorAccent"/>
+                <LinearLayout style="@style/mpwc"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                       android:layout_height="wrap_content">
+                        <TextView
+                            style="@style/mpwc"
+                            android:text="Front"
+                            android:paddingTop="5dp"
+                            android:paddingLeft="20dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="10dp"
+                            android:textSize="16dp"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@android:color/darker_gray"
+                            android:background="#ffffff"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ln_img_front"
+                            android:orientation="vertical"
+                            android:background="#eeeeee"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            >
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:layout_height="150dp"
+                                android:layout_marginLeft="2dp"
+                                android:id="@+id/img_front"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            style="@style/mpwc"
+                            android:text="Left"
+                            android:paddingTop="5dp"
+                            android:paddingLeft="20dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="10dp"
+                            android:textSize="16dp"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@android:color/darker_gray"
+                            android:background="#ffffff"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ln_img_left"
+                            android:orientation="vertical"
+                            android:background="#eeeeee"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            >
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:layout_height="150dp"
+                                android:layout_marginLeft="2dp"
+                                android:id="@+id/img_left"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout style="@style/mpwc"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            style="@style/mpwc"
+                            android:text="Right"
+                            android:paddingTop="5dp"
+                            android:paddingLeft="20dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="10dp"
+                            android:textSize="16dp"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@android:color/darker_gray"
+                            android:background="#ffffff"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ln_img_right"
+                            android:orientation="vertical"
+                            android:background="#eeeeee"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            >
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:layout_height="150dp"
+                                android:layout_marginLeft="2dp"
+                                android:id="@+id/img_right"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            style="@style/mpwc"
+                            android:text="Back"
+                            android:paddingTop="5dp"
+                            android:paddingLeft="20dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="10dp"
+                            android:textSize="16dp"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@android:color/darker_gray"
+                            android:background="#ffffff"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ln_img_back"
+                            android:orientation="vertical"
+                            android:background="#eeeeee"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            >
+                            <ImageView
+
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:layout_height="150dp"
+                                android:layout_marginLeft="2dp"
+                                android:id="@+id/img_back"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+                <!--<Button-->
+                    <!--android:id="@+id/hu"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="+ Add Image 1"-->
+                    <!--android:padding="10dp"-->
+                    <!--android:background="#ffb515"-->
+                    <!--android:textColor="#ffffff"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_marginBottom="20dp"-->
+
+                    <!--/>-->
+
+
+
+
+                <!--<Switch-->
+                <!--android:id="@+id/visible_switch"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:hint="Show in List"-->
+                    <!--android:textSize="16dp"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:switchPadding="30dp"-->
+                    <!--android:checked="true"-->
+                    <!--android:textOn="Shown in the list"-->
+                    <!--android:textOff="Hidden from the list"-->
+                    <!--/>-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Notes"
+                    android:textSize="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/colorAccent"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Any Notes or information"
+                    android:id="@+id/notesText" />
+
+
+                <Button
+                    android:id="@+id/upload_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upload"
+                    android:layout_marginBottom="10dp"
+                    android:background="#FF00ACC1"
+                    android:textColor="#ffffff"
+                    android:textSize="17dp"
+                    android:layout_marginTop="20dp"
+                    android:onClick="goToOTP"
+
+                    />
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

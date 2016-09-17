@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/activity_booking_history" android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+    <ScrollView style="@style/mama">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="10.0dip" style="@style/mpwc">
+            <LinearLayout android:orientation="vertical" android:layout_marginTop="0.0dip" style="@style/topTitleBar">
+                <TextView android:id="@+id/bookHisTtl" android:textSize="20.0dip" android:textColor="@color/colorPrimary" android:text="Booking Details" style="@style/topTitleText" />
+                <Button style="@style/topTitleShadow" />
+            </LinearLayout>
+            <LinearLayout style="@style/mpwc">
+                <TextView android:id="@+id/bookingHeaderDets" android:paddingLeft="18.0dip" android:paddingTop="5.0dip" android:paddingBottom="10.0dip" android:text="Booking ID : #XXX On xxx" style="@style/mpwc" />
+            </LinearLayout>
+            <LinearLayout style="@style/mpwcvw">
+                <LinearLayout style="@style/mpwcvw">
+                    <TextView android:text="@string/rideDate" style="@style/confirmBooking_QueText" />
+                    <TextView
+                        android:id="@+id/ride_dure"
+                        android:text="@string/lo" style="@style/confirmBooking_AnsText" />
+                    <TextView android:text="@string/bookSts" style="@style/confirmBooking_QueText" />
+                    <TextView
+                        android:id="@+id/ride_sts"
+
+                        android:text="Loading.."
+                        style="@style/confirmBooking_AnsText"
+                        android:lineSpacingExtra="5dp"
+                        android:textSize="16dp"
+                        android:gravity="left"/>
+
+                    <TextView android:text="@string/usrNme" style="@style/confirmBooking_QueText" />
+                    <TextView
+                        android:id="@+id/ride_cusName"
+                        android:text="@string/lo" style="@style/confirmBooking_AnsText" />
+
+                    <TextView android:text="@string/usrMo" style="@style/confirmBooking_QueText" />
+                    <TextView
+                        android:id="@+id/ride_cusMob"
+                        android:text="@string/lo" style="@style/confirmBooking_AnsText" />
+
+                    <LinearLayout style="@style/mpwcvw">
+                        <TextView android:text="@string/carDesc" style="@style/confirmBooking_QueText" />
+                        <TextView
+                            android:id="@+id/ride_carNo"
+                            android:text="@string/lo" style="@style/confirmBooking_AnsText" />
+                    </LinearLayout>
+                    <TextView android:text="@string/veh" style="@style/confirmBooking_QueText" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/singleCar_container">
+                    <LinearLayout style="@style/mpwcvw">
+                        <TextView
+                            android:id="@+id/car_brand"
+                            android:text="@string/lo" style="@style/browse_car_name" />
+                        <TextView
+                            android:id="@+id/car_cost"
+                            android:text="@string/lo" style="@style/browse_car_price" />
+                        <!--<ImageView-->
+                            <!--android:id="@+id/car_image_inps"-->
+                            <!--style="@style/browse_car_image" />-->
+                    <!---->
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+
+                    android:text="@string/totCost" style="@style/confirmBooking_QueText" />
+                <TextView
+                    android:id="@+id/tot_cost"
+                    android:text="@string/lo" style="@style/confirmBooking_AnsText" />
+                <TextView
+
+                    android:layout_marginTop="-5.0dip" android:text="@string/advAmt" style="@style/confirmBooking_QueText" />
+                <TextView
+                    android:id="@+id/adv_amount"
+                    android:text="@string/lo" style="@style/confirmBooking_AnsText" />
+                <TextView
+
+                    android:layout_marginTop="-5.0dip" android:text="@string/discAmt" style="@style/confirmBooking_QueText" />
+                <TextView
+                    android:id="@+id/rideDiscTxt"
+                    android:text="@string/lo" style="@style/confirmBooking_AnsText" />
+
+                <TextView
+
+                    android:layout_marginTop="-5.0dip" android:text="@string/balPa" style="@style/confirmBooking_QueText" />
+                <TextView
+                    android:id="@+id/balToPay"
+                    android:text="@string/lo" style="@style/confirmBooking_AnsText" />
+
+
+                <TextView
+
+                    android:layout_marginTop="-5.0dip" android:text="@string/pickAt" style="@style/confirmBooking_QueText" />
+                <TextView
+                    android:id="@+id/pickUpLocTxt"
+                    android:text="@string/lo" style="@style/confirmBooking_AnsText" />
+
+                <TextView
+
+                    android:layout_marginTop="-5.0dip" android:text="@string/pickT" style="@style/confirmBooking_QueText" />
+                <TextView
+                    android:id="@+id/pickUpAtTxt"
+                    android:text="@string/lo" style="@style/confirmBooking_AnsText" />
+
+
+                <Button
+                    android:id="@+id/start_onbook"
+                    android:background="#000000"
+                    android:textAllCaps="false"
+                    android:layout_marginBottom="100dp"
+                    android:layout_marginTop="35dp"
+                    android:text="Start Ride" style="@style/carDetilEndBtn" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
